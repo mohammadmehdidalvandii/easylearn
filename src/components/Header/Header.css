@@ -1,0 +1,103 @@
+.header{
+    display: block;
+    background: url(../../../public/images/intro2-bg.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+}
+.header-wrapper{
+    display: block;
+    position: relative;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   max-width: 400px;
+    position: absolute;
+    left: 2rem;
+    margin: 5rem auto;
+}
+.header-content-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blue-50);
+    margin-bottom: 3rem;
+}
+.header-content-description{
+    font-size: 0.1em 0.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.header-content-buttons{
+    display: flex;
+    justify-content: center;
+    align-content: inherit;
+}
+.header-content-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    width: 130px;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.header-content-btn-start{
+    border: 1px solid var(--blue-50);
+    border-radius: 0.3rem ;
+    color: var(--blue-50);
+    transition: all 0.4s ease;
+}
+.header-content-btn-start:hover{
+    background-color: var(--blue-50);
+    color: var(--white);
+}
+.header-content-btn-course{
+    border: 1px solid #736DD5;
+    border-radius: 0.3rem;
+    color: #736DD5;
+    transition: all 0.4s ease;
+}
+.header-content-btn-course:hover{
+    background-color: #736DD5;
+    color: var(--white);
+}
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .header{
+        display: none;
+    }
+
+    }
+   
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}

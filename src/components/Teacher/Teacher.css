@@ -1,0 +1,107 @@
+.teacher {
+    margin-top: 3rem;
+}
+
+.teacher-wrapper {}
+
+.teacher-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.teacher-item {
+    display: block;
+    margin-bottom: 1rem;
+    width: 240px;
+    border: 1px solid var(--gray);
+    border-radius: 0.4rem;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.teacher-item-img {
+    width: 240px;
+    height: 150px;
+}
+
+.teacher-item-titleText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.teacher-item-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.teacher-item-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--blue-50);
+}
+
+.teacher-item-media {
+    display: block;
+    margin-top: 1rem;
+    border-top: 1px solid var(--gray);
+    padding: 0.8rem 0;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.teacher-item-mediaLink {
+    display: inline;
+    margin: 0 0.7rem;
+}
+
+.mediaLinkIcon {
+    font-size: 1rem;
+}
+.teacher-item-mediaLink:nth-child(1){
+    color: green;
+}
+.teacher-item-mediaLink:nth-child(2){
+    color: blue;
+}
+.teacher-item-mediaLink:nth-child(3){
+    color: red;
+}
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .teacher-items{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .teacher-items{
+        flex-direction: column;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}

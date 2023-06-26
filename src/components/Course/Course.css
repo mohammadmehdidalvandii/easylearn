@@ -1,0 +1,196 @@
+.course {
+    margin: 3rem 0;
+}
+
+.course-wrapper {}
+
+.course-items {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    display: block;
+    width: 320px;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+}
+
+.course-img-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 320px;
+}
+
+.course-img {
+    width: 320px;
+}
+
+.course-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 320px;
+    height: 170px;
+    opacity: 0;
+}
+.course-item:hover .course-buy {
+ opacity: 1;
+}
+
+.course-buy-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 3rem;
+    height: 1.3rem;
+    background-color: var(--gray);
+    opacity: 0.9;
+    border-radius: 1rem;
+    color: var(--white);
+    transition: all 0.7s;
+    opacity: 0;
+}
+.course-item:hover .course-buy-count{
+    opacity: 1;
+}
+
+.course-but-countIcon {
+    margin-right: 0.4rem;
+}
+
+.course-buy-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 2rem;
+    background-color: var(--blue-50);
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+.course-buy-btn:hover{
+    background-color: var(--blue);
+}
+
+.course-title-text {
+    margin: 2rem 1rem;
+}
+
+.course-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--black);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.course-title:hover{
+    color: var(--blue-50);
+}
+
+.course-text {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--gray);
+}
+
+.course-prices {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid var(--gray);
+    background-color: #F7F7F7;
+}
+
+.course-price-texts {
+}
+
+.course-price {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.course-price-discount {
+    display: inline;
+    position: relative;
+    color: var(--gray);
+}
+.course-price-discount::before{
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 0.1rem;
+    background-color: var(--gray);
+    position: absolute;
+    bottom: 0;
+    margin: 0.6rem 0;
+    transform: rotate(12deg);
+}
+.course-price-sale {
+    margin-right: 0.5rem;
+    color: #7CA750;
+}
+
+.course-discount-percent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 1rem;
+    width: 2rem;
+    padding: 0.2rem 0;
+}
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .course-items{
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}

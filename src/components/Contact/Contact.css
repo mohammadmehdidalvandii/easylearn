@@ -1,0 +1,187 @@
+.contact{
+    background-color: #ECECF8;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: var(--black);
+    width: 300px;
+    position: relative;
+}
+.contact-title::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2.5rem;
+    width: 150px;
+    height: 0.2rem;
+    background-color: var(--blue);
+}
+.contact-wrapper{
+    display: block;
+}
+.contact-top{
+    display: block;
+    padding:2rem 0;
+
+}
+.contact-top-items{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.contact-top-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   margin-bottom: 1rem;
+}
+.contact-top-IconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: var(--blue);
+   width: 120px;
+   height: 120px;
+   border-radius: 0.3rem;
+}
+.contact-top-icon{
+    font-size: 4rem;
+    color: var(--white);
+}
+.contact-top-text{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.contact-down{
+    display: block;
+    padding:2rem 0 ;
+}
+.contact-down-form{
+    display: block;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 0.3rem;
+    max-width: 600px;
+    padding: 1rem 1rem;
+}
+.contact-down-formTitleText{
+    display: block;
+}
+.contact-down-formTitle{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue-50);
+}
+.contact-down-formText{
+    display: block;
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--black);
+}
+.contact-down-formNameEmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contact-down-formBox{
+    display: block;
+    border: 1px solid var(--gray);
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 2.2rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.contact-down-formBox:first-child{
+    margin-bottom: 0.5rem;
+}
+.contact-down-formInput{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2.2rem;
+    padding-right: 0.4rem;
+}
+.contact-down-formInput::placeholder{
+    padding-right: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+.contact-down-formBoxTextArea{
+    display: block;
+    width: 100;
+    border: 1px solid var(--gray);
+    border-radius: 0.3rem;
+}   
+.contact-down-formText{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-right: 0.4rem;
+}
+.contact-down-formButton{
+    display: block;
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: all 0.4s ease;
+}
+.contact-down-formButton:hover{
+    background-color: var(--blue-50);
+}
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+    .contact-top-IconBox{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .contact-top-items{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}

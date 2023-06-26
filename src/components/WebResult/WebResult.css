@@ -1,0 +1,136 @@
+.webResult{
+    margin-top: 3rem;
+    overflow-x: hidden;
+}
+
+.webResult-count-sliders{
+    display: block;
+    margin: 2rem auto;
+}
+
+.webResult-count{
+    display: block;
+    width: 100%;
+}
+
+.webResult-count-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webResult-count-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    width: 300px;
+}
+.webResult-count-IconBox{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    background-color: var(--blue);
+    border-radius: 0.3rem;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.webResult-count-content{
+    text-align: center;
+}
+
+.webResult-count-title{
+    font-size: 1rem;
+    font-weight: 700;   
+    color: var(--black);
+    margin-top: 1rem;
+}
+.webResult-count-numberText{
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.webResult.sliders{
+    display: block;
+}
+.slider-items{
+   display: block;
+    margin-top: 3rem;
+}
+
+.slider-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-radius: 0.3rem;
+    background-color: var(--white);
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+}
+
+.slider-img{
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.slider-content{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.slider-content-name{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.slider-content-text{
+    display: block;
+    max-width: 30rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--gray);
+}
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .webResult-count-items{
+        flex-direction: column;
+    }
+    .webResult-count-item{
+        margin-bottom: 1.5rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+}

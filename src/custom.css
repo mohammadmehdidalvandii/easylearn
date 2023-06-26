@@ -1,0 +1,36 @@
+@import url(./reset.css);
+
+:root {
+    --blue: #007BFF;
+    --blue-50: #17A2B8;
+    --black: #272727;
+    --gray: #6C757D;
+    --gray-50: #ECECF8;
+    --white: #ffffff;
+}
+
+@font-face {
+    font-family: iranLight;
+    src: url(./font/IRANSansWeb_Light.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: iranLight;
+    font-size: 1rem;
+    direction: rtl;
+}
+
+.container {
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

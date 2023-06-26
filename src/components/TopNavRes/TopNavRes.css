@@ -1,0 +1,102 @@
+.topnavres{
+    display: none;
+}
+.topnavres-menus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topnavres-logo-img{
+
+}
+.topnavres-menu{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topnavres-menu-link{
+    margin: 0 1.5rem;
+    color: var(--gray);
+    transition: all 0.4s ease;
+}
+.topnavres-menu-link:hover{
+    color: var(--blue-50);
+}
+
+.topnavres-menu-linkIcon{
+    font-size: 1.5rem;
+}
+
+
+.tonavres-search{
+    margin-top: 2rem;
+}
+.topnavres-search-form{
+    background-color: unset;
+    width: 300px;
+    height: 2.5rem;
+}
+.topnavres-search-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.topnavres-search-box input{
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    padding: 0 0.3rem;
+}
+.topnavres-search-box input::placeholder{
+    font-size: 1.1rem;
+    color: var(--black);
+}
+.topnavres-search-box button{
+    width: 90px;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--blue-50);
+    color: var(--white);
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+.topnavres-search-box button:hover{
+    color: var(--white);
+    background-color: var(--blue);
+}
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .topnavres{
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+    .topnavres-search-box button{
+        width: 60px;
+    }
+}

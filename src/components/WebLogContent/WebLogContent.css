@@ -1,0 +1,111 @@
+.webLogContent{
+    background-color: #ececf8;
+}
+.webLogContent-wrapper{
+    display: block;
+    padding: 3rem 0;
+}
+.webLogContent-Details{
+    display: block;
+}
+.webLogContent-Details-img{
+    width: 100%;
+}
+.webLogContent-Details-title{
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black);
+}
+.webLogContent-Details-text{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.webLogContent-Details-author,
+.webLogContent-Details-data,
+.webLogContent-Details-view,
+.webLogContent-Details-group{
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray);
+    transition: all 0.4s ease;
+}
+.webLogContent-Details-author:hover,
+.webLogContent-Details-data:hover,
+.webLogContent-Details-view:hover,
+.webLogContent-Details-group:hover{
+    color: var(--blue);
+}
+.webLogContent-Details-Icon{
+    margin-left: 0.3rem;
+    color: var(--black);
+}
+
+.webLogContent-description{
+    display: block;
+    margin: 3rem 0;
+    width: 100%;
+}
+.webLogContent-description-text{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray);
+    line-height: 2;
+}
+.webLogContent-description-sticky{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.webLogContent-description-stickyTitle{
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+
+}
+.webLogContent-description-stickyText{
+    margin-left: 3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--gray);
+    background-color: var(--white);
+    padding: 6px 8px;
+    border-radius: 0.5rem;
+}
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+        
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .webLogContent-description-sticky{
+        flex-direction: column;
+    }
+}
